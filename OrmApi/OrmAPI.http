@@ -1,0 +1,6 @@
+@OrmAPI_HostAddress = http://localhost:5187
+
+GET {{OrmAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
