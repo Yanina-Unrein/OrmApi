@@ -55,7 +55,7 @@ namespace OrmAPI.Controllers
 
         [HttpGet("TodosLosEmpleadosPorPais")]
         public async Task<ActionResult<List<Employee>>> GetAllByCountry([FromQuery] string country)
-            => Ok(await _repository.ObtenerTodosLosEmpleadosPorPais(country));
+               => Ok(await _repository.ObtenerTodosLosEmpleadosPorPais(country));
 
         [HttpGet("ElEmpleadoMasGrande")]
         public async Task<ActionResult<Employee>> GetOldest()
@@ -66,6 +66,9 @@ namespace OrmAPI.Controllers
 
         [HttpGet("CantidadEmpleadosPorTitulos")]
         public async Task<ActionResult<List<object>>> GetCountByTitle()
-            => Ok(await _repository.ObtenerCantidadEmpleadosPorTitulos());
+        {
+            var result = await _repository.ObtenerCantidadEmpleadosPorTitulos();
+            return Ok(result);
+        }
     }
 }

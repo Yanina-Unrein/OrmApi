@@ -20,20 +20,20 @@ Incluye soporte para **Swagger** para visualizar y probar los endpoints.
 ## 🧠 Estructura del proyecto
 
 OrmAPI/   
-├── Controllers/   
-│ ├── EmpleadosController.cs   
-│ └── ProductosController.cs   
-├── Data/   
-│ └── DataContext.cs   
-├── Modelo/   
-│ ├── Employee.cs   
-│ ├── Products.cs   
-│ └── Categories.cs   
-├── Repository/   
-│ ├── INorthwindRepository.cs   
-│ └── NorthwindRepository.cs   
-├── appsettings.json   
-└── Program.cs   
+├── Controllers/      
+│ ├── EmpleadosController.cs      
+│ └── ProductosController.cs      
+├── Data/      
+│ └── DataContext.cs      
+├── Modelo/      
+│ ├── Employee.cs      
+│ ├── Products.cs      
+│ └── Categories.cs      
+├── Repository/        
+│ ├── INorthwindRepository.cs      
+│ └── NorthwindRepository.cs      
+├── appsettings.json     
+└── Program.cs      
 ---
 
 ## 📘 Endpoints disponibles
